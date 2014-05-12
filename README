@@ -1,0 +1,41 @@
+This Annotation based Spring AOP with Aspectj .
+Advice i.e the methods of class
+	 1) SimpleLoggerAdvice.firstAdvice(Before Advice)
+	 2) SimpleLoggerAdvice.secondAdvice(After Advice)
+	 3) AdviceWithJointPoint.firstAdvice(Before Advice)
+	 4) AdviceWithJointPoint.secondAdvice(After Advice)
+	 5) LoggerAllAdvice.firstAdvice(Before Advice)
+	 6) LoggerAllAdvice.secondAdvice(After Advice)
+	 7) LoggerClassLabelAdvice.firstAdvice(Before Advice)
+	 8) LoggerClassLabelAdvice.secondAdvice(After Advice)
+	 9) LoggingAllGetAdvice.firstAdvice(Before Advice)
+	 10) LoggingAllGetAdvice.secondAdvice(After Advice) 
+
+Aspect i.e the class having advices
+     1) AdviceWithJointPoint:- In Advices passing org.aspectj.lang.JoinPoint variable
+	 2) LoggerAllAdvice:- It is Advice for any methods in any advices 
+	 3) LoggerClassLabelAdvice:- Class label Advices
+	 4) LoggingAllGetAdvice:- Advices of all get methods only
+	 5) SimpleLoggerAdvice:- Showing Just simple Advice with whole method name as pointcut
+
+
+Target i.e the class where advices are applied
+	 1) EmployeeService
+	 2) ProjectService
+	 
+Jointpoint i.e methods of target class
+     1) EmployeeService.getEmployee
+     2) EmployeeService.setEmployee
+	 3) ProjectService.getProject 	      
+	 4) ProjectService.setProject
+	 
+PointCut
+	 1) SimpleLoggerAdvice.getEmployeeIdMethod
+	 2) AdviceWithJointPoint.allMethod
+	 3) LoggerAllAdvice.allMethod
+	 4) LoggerClassLabelAdvice.allModelgetMethod
+	 5) LoggerClassLabelAdvice.allSecificModelgetMethod
+	 5) LoggingAllGetAdvice.allgetMethod 
+	 
+	 
+	 
